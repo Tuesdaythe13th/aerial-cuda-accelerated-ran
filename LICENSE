@@ -2,7 +2,7 @@ The contents of this repository are licensed under Apache 2.0. When pulling
 the Aerial container from NGC (NVIDIA GPU Cloud) and building the Aerial 
 CUDA-Accelerated RAN SDK, you will download NVIDIA and 3rd party software 
 and materials, which are governed by licenses and terms as described at 
-https://docs.nvidia.com/aerial/cuda-accelerated-ran/latest/aerial_cubb/release_notes/acknowledgements.html
+https://docs.nvidia.com/aerial/cuda-accelerated-ran/latest/release_notes/acknowledgements.html
 
 ###########################################################################
 
