@@ -1,0 +1,99 @@
+{
+  "repo": "NVIDIA Aerial CUDA-Accelerated RAN",
+  "overview": [
+    "GPU-Accelerated 5G PHY (cuPHY): CUDA-based physical layer processing for 5G NR including channel coding (LDPC, Polar), modulation/demodulation, MIMO processing, and channel estimation",
+    "GPU-Accelerated MAC Scheduler (cuMAC): High-performance L2 scheduler acceleration for resource allocation and scheduling",
+    "Python API (pyAerial): Python bindings for AI/ML research and integration with frameworks like TensorFlow and Sionna",
+    "5G Reference Models (5GModel): MATLAB-based 5G waveform generation and test vector creation based on 3GPP specifications",
+    "Containerized Environment: Docker-based development and deployment with pre-built containers"
+  ],
+  "components": [
+    {
+      "name": "cuPHY",
+      "description": "GPU-accelerated 5G PHY",
+      "file_count": 1113
+    },
+    {
+      "name": "cuMAC",
+      "description": "GPU-accelerated MAC scheduler",
+      "file_count": 189
+    },
+    {
+      "name": "pyaerial",
+      "description": "Python APIs for research and integration",
+      "file_count": 204
+    },
+    {
+      "name": "testBenches",
+      "description": "Validation and performance tooling",
+      "file_count": 153
+    },
+    {
+      "name": "testVectors",
+      "description": "Reference vectors",
+      "file_count": 10
+    },
+    {
+      "name": "5GModel",
+      "description": "Waveform generation models",
+      "file_count": 716
+    }
+  ],
+  "perf_profiles": [
+    {
+      "name": "testcases_avg_F01",
+      "groups": 2,
+      "num_testcases": 38,
+      "sample_scenarios": [
+        "F01-AC-03",
+        "F01-AC-04",
+        "F01-AC-05",
+        "F01-AC-06"
+      ]
+    },
+    {
+      "name": "testcases_avg_F08",
+      "groups": 7,
+      "num_testcases": 51,
+      "sample_scenarios": [
+        "F08-AC-01",
+        "F08-AC-02",
+        "F08-AC-03",
+        "F08-AC-04"
+      ]
+    },
+    {
+      "name": "testcases_avg_F14",
+      "groups": 8,
+      "num_testcases": 94,
+      "sample_scenarios": [
+        "F14-AC-01",
+        "F14-AC-02",
+        "F14-AC-03",
+        "F14-AC-04"
+      ]
+    },
+    {
+      "name": "testcases_het_F01",
+      "groups": 2,
+      "num_testcases": 46,
+      "sample_scenarios": [
+        "F01-DS-01",
+        "F01-DS-02",
+        "F01-DS-03",
+        "F01-DS-04"
+      ]
+    },
+    {
+      "name": "testcases_het_F14",
+      "groups": 2,
+      "num_testcases": 46,
+      "sample_scenarios": [
+        "F14-DS-01",
+        "F14-DS-02",
+        "F14-DS-03",
+        "F14-DS-04"
+      ]
+    }
+  ]
+}
