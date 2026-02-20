@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerial 6G Call Studio Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Aerial 6G Call Studio</h1>
+      <p>
+        Interactive concept demo: create synthetic voice/video/data calls and
+        map them to Aerial performance profiles.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Platform Context</h2>
+        <ul id="overview-list" class="overview"></ul>
+      </section>
+
+      <section>
+        <h2>Create Simulated Call Batch</h2>
+        <form id="call-form" class="controls">
+          <label>
+            Traffic type
+            <select id="traffic-type" required>
+              <option value="voice">Voice (low bitrate)</option>
+              <option value="video">Video (high throughput)</option>
+              <option value="iot">IoT burst (massive devices)</option>
+            </select>
+          </label>
+
+          <label>
+            Performance profile
+            <select id="profile-select" required></select>
+          </label>
+
+          <label>
+            Concurrent calls
+            <input id="concurrency" type="range" min="10" max="200" value="60" />
+            <span id="concurrency-value">60</span>
+          </label>
+
+          <button type="submit">Generate call plan</button>
+        </form>
+
+        <div id="kpi-grid" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Generated Call Sessions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Session</th>
+              <th>Slice</th>
+              <th>PRBs</th>
+              <th>Latency (ms)</th>
+              <th>Reliability</th>
+            </tr>
+          </thead>
+          <tbody id="sessions-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
